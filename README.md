@@ -45,12 +45,12 @@ Teacher can review each score(s) and mark as checked if satisified, or recommend
 
 ![sixth](https://user-images.githubusercontent.com/113325142/206303022-aa600bcc-d74c-4e75-8807-76ba83d5e64e.jpg)
 
+To Run:
+1.) Clone Repo
+2.) Run npm install
 
+To Use:
+1.) Run npm start
+2.) Navigate to localhost:8888
 
-Installation
-Clone repo
-run npm install
-Usage
-run npm start
-Navigate to localhost:8888
 
