@@ -1,0 +1,82 @@
+<body id="top">
+  <head>
+    <title>Chat</title>
+    <%- include('partials/header') -%>
+    <nav class="navbar navbar-expand-lg navigation" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="imgs/logo.png" alt="" class="img-fluid" />
+        </a>
+
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarmain"
+          aria-controls="navbarmain"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="icofont-navigation-menu"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarmain">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/profile">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/mood">Mood</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/chat">Chat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/logout">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </head>
+  <section class="section student-single">
+    <div class="container">
+      <div class="row" class="form-group">
+        <form action="/chat" method="POST" onsubmit="showSpinner()">
+          <p>
+            <label for="w3review">
+              The following is a private conversation with an AI assistant.
+              Nothing is saved about you. The assistant will be supportive,
+              creative, and very friendly
+            </label>
+          </p>
+          <div class="form-group-2 mb-4">
+            <textarea readonly name="ai" id="ai" class="form-control" rows="8">
+<%=response%>
+            </textarea>
+            <div class="form-group-2 mb-4"></div>
+            <div>
+              <input
+                name="input"
+                id="input"
+                type="text"
+                class="form-control"
+                placeholder="..."
+                required
+              />
+            </div>
+          </div>
+          <br />
+          <input type="submit" value="Submit" />
+          <div hidden id="loader" class="loader"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script>
+    function showSpinner() {
+      $("#loader").attr("hidden", false);
+    }
+  </script>
+  <%- include('partials/footer') -%>
+</body>

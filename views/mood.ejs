@@ -1,0 +1,68 @@
+
+<body id="top">
+  <head>
+    <meta charset="utf-8">
+    <title>Mood</title>
+    <%- include('partials/header') -%>
+    <nav class="navbar navbar-expand-lg navigation" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="imgs/logo.png" alt="" class="img-fluid">
+      </a>
+  
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain"
+        aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icofont-navigation-menu"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarmain">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="/profile">Profile</a></li>
+          <li class="nav-item active"><a class="nav-link" href="/mood">Mood</a></li>
+          <li class="nav-item"><a class="nav-link" href="/chat">Chat</a></li>
+          <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </head>  
+  <section class="section student-single">
+    <div class="container">
+      <div class="row">
+        <form action="/" method="POST">
+          <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input readonly name="studentName" id="name" type="text" class="form-control" value="<%=studentName%>">
+                </div>
+              </div>
+  
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input name="entryDate" id="email" type="date" class="form-control" placeholder="Today's Date" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input name="mood" id="subject" type="number" class="form-control" placeholder="Mood (from a scale of 1-10)" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input name="grade" id="phone" type="number" class="form-control" placeholder="Grade on Daily Quiz (rounded up if decimal)" required>
+                </div>
+              </div>
+            </div>
+  
+            <div class="form-group-2 mb-4">
+              <textarea name="message" id="message" class="form-control" rows="8" placeholder="Your Message" required></textarea>
+            </div>
+  
+            <div>
+              <input class="btn btn-main btn-round-full" name="submit" type="submit" value="Send Messege"></input>
+            </div>
+      </form>
+      </div>
+    </div>
+  </section>
+<%- include('partials/footer') -%>
