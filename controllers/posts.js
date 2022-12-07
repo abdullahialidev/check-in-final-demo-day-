@@ -131,7 +131,7 @@ module.exports = {
         const { Configuration, OpenAIApi } = require("openai");
 
         const configuration = new Configuration({
-          apiKey: "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", //process.env.OPENAI_API_KEY,
+          apiKey: "Your-API-Key", //process.env.OPENAI_API_KEY,
         });
         const openai = new OpenAIApi(configuration);
         // const response = {
