@@ -3,7 +3,7 @@
 This project is called Check-In and is utilized as a classroom tool for teachers to stop bullying and give students tools to succeed academically.
 
 TECH USED:
-Javascript,CSS, HTML, Node.js, Express.js(template handler), Passport.js, Open AI's Chat GPT3 API, Sentiment Analysis API ...
+Javascript,CSS, HTML, Node.js, Express.js(template handler), Passport.js, Open AI's Chat GPT API, Sentiment Analysis API ...
 
 
 
@@ -23,7 +23,7 @@ enter important information for teacher review. This includes score on daily qui
 
 
 
-There is also a chat feature, where students can speak with an AI. This AI was designed by using Open AI's GPT3 API, which will respond to any student responses. This is great because the AI does not say anything negative to the student by design and is meant to positively affirm student emotion. Machine learning is something I am passionate about and adding this feature was paramount to my project.
+There is also a chat feature, where students can speak with an AI. This AI was designed by using Open AI's GPT API, which will respond to any student responses. This is great because the AI does not say anything negative to the student by design and is meant to positively affirm student emotion. Machine learning is something I am passionate about and adding this feature was paramount to my project.
 
 ![first](https://user-images.githubusercontent.com/113325142/206301373-6ea7857b-2886-4ea3-bc7b-7f03bfb2db0a.jpg)
 ![second](https://user-images.githubusercontent.com/113325142/206301384-52efc9f6-1fc6-45a0-94c9-d5ab170951e3.jpg)
