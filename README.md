@@ -3,7 +3,7 @@
 This project is called Check-In and is utilized as a classroom tool for teachers to stop bullying and give students tools to succeed academically.
 
 TECH USED:
-Javascript,CSS, HTML, Node.js, Express.js(template handler), Passport.js, Open AI's Chat GPT API, Sentiment Analysis API ...
+Javascript,CSS, HTML, Node.js, MongoDB, Express.js(template handler), Passport.js, Open AI's Chat GPT API, Sentiment Analysis API ...
 
 
 
