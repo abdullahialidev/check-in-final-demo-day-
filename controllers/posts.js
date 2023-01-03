@@ -6,7 +6,7 @@ var sentiment = new Sentiment();
 module.exports = {
   getMood: async (req, res) => {
     try {
-      //Send pending and completed order(s) to the EJS..
+      //Send pending and completed review(s) to the EJS..
       if (!req.user?.isTeacher) {
         res.render("mood.ejs", {
           studentName: req.user?.userName,
@@ -20,7 +20,7 @@ module.exports = {
   },
   getChat: async (req, res) => {
     try {
-      //Send pending and completed order(s) to the EJS..
+      //Send pending and completed review(s) to the EJS..
       if (!req.user?.isTeacher) {
         res.render("chat.ejs", {
           studentName: req.user?.userName,
@@ -35,7 +35,7 @@ module.exports = {
   },
   getProfile: async (req, res) => {
     try {
-      //Send pending and completed order(s) to the EJS..
+      //Send pending and completed review(s) to the EJS..
       if (req.user?.isTeacher) {
         //Find any pending order(s)
         const pendingStudents = await Post.find({ reviewStatus: "pending" });
